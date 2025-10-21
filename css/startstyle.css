@@ -1,0 +1,91 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px; 
+    background: linear-gradient(
+        to bottom,
+        #000000 5%,
+        #661414 60%,
+        transparent 100%
+    );
+    z-index: -1;
+    
+    pointer-events: none; 
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center;    /* จัดกึ่งกลางแนวตั้ง */
+    min-height: 100vh;
+}
+
+
+.landing-content {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 600px;
+    font-family: sans-serif;
+    
+    position: relative; 
+    z-index: 1;
+}
+
+.landing-content .p-normal {
+    font-family: 'Noto Sans Thai';
+    font-weight: 400;
+    font-size: 26px;
+    color: #bdaeae; 
+    margin-bottom: 25px;
+}
+
+.landing-content .p-bold {
+    font-family: 'Krub';
+    font-weight: 500;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.landing-button {
+    text-decoration: none;
+    background-color: #250000;
+    font-family: 'Krub';
+    color: #e4dada;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 2px solid #000000;
+    cursor: pointer;
+    
+    z-index: 2; 
+    position: relative;
+}
+
+.landing-button:hover {
+    background-color: #410a0a;
+    border-color: #410a0a;
+}
+
+h1 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 700;
+    font-size: 78px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
