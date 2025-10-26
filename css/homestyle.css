@@ -1,0 +1,282 @@
+.custom-nav {
+    background-color: #000000;
+}
+
+.custom-nav .nav-link,
+.custom-nav .navbar-brand {
+    color: white;
+}
+
+#review:before {
+    content: "";
+    /* ต้องมี content เพื่อให้ display: block ทำงาน */
+    display: block;
+    height: 90px;
+    /* **ความสูงของ Navbar** */
+    margin-top: -90px;
+    /* **ค่าลบของความสูง Navbar เพื่อดึงองค์ประกอบขึ้นไป** */
+    visibility: hidden;
+    /* ซ่อนองค์ประกอบนี้ไม่ให้แสดงผล */
+}
+
+#benefit:before {
+    content: "";
+    /* ต้องมี content เพื่อให้ display: block ทำงาน */
+    display: block;
+    height: 90px;
+    /* **ความสูงของ Navbar** */
+    margin-top: -90px;
+    /* **ค่าลบของความสูง Navbar เพื่อดึงองค์ประกอบขึ้นไป** */
+    visibility: hidden;
+    /* ซ่อนองค์ประกอบนี้ไม่ให้แสดงผล */
+}
+
+.bodyhome {
+  background: linear-gradient(
+    to bottom,
+    #000000 10%,
+    #661414 65%,
+    #ffc1c1 100%
+  );
+
+}
+
+.bodyreview {
+  background: linear-gradient(
+    to bottom,
+    #000000 3%,
+    #661414 25%,
+    #ffc1c1 100%
+  );
+
+}
+
+.bodybene {
+  background: linear-gradient(
+    to bottom,
+    #000000 10%,
+    #661414 65%,
+    #ffc1c1 100%
+  );
+
+}
+
+h1 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 700;
+    font-size: 54px;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 400;
+    font-size: 46px;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 400;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+h4 {
+    font-family: 'Krub';
+    font-weight: 600;
+    font-size: 58px;
+    font-style: italic;
+    color: #ff0000;
+}
+
+h5 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 400;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+h6 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.h7 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 500;
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.h8 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 400;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.hightlight {
+    font-family: 'Noto Sans Thai';
+    font-weight: 700;
+    font-size: 58px;
+    color: #ff0000;
+    font-style: italic;
+}
+
+.hightlight2 {
+    font-family: 'Krub';
+    font-weight: 400;
+    font-size: 50px;
+    color: #f4adad;
+    font-style: italic;
+}
+
+.hightlight3 {
+    font-family: 'Noto Sans Thai';
+    font-weight: 700;
+    font-size: 36px;
+    color:   #ff0000;
+}
+
+.hightlight-p {
+    font-family: 'Sarabun';
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.hightlight-p2 {
+    font-family: 'Sarabun';
+    font-weight: 400;
+    font-size: 18px;
+    color: #ff1414;
+    line-height: 1.8;
+}
+
+.text-with-shadow {
+    text-shadow: 
+        3px 3px 5px #000000; /* 1. X Offset, 2. Y Offset, 3. Blur Radius, 4. Color */
+}
+
+.p1 {
+    font-family: 'Sarabun';
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+
+p {
+    font-family: 'Sarabun';
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.shadow-img {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(41, 5, 5, 0.6);
+}
+
+.topic {
+    font-family: 'Sarabun';
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.bold {
+    font-family: 'Sarabun';
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.finish {
+    font-family: 'Sarabun';
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.p2 {
+    font-style: italic;
+    color: #ffffff;
+}
+
+.indent-sm {
+    text-indent: 20px !important;
+}
+
+@media (min-width: 768px) {
+    /* คลาสนี้จะมีผลเมื่อความกว้างจอตั้งแต่ 768px ขึ้นไป */
+    .indent-md-1 {
+        text-indent: 60px !important; 
+    }
+    .indent-md-2 {
+        text-indent: 120px !important; 
+    }
+}
+
+#accordionExample {
+
+    --bs-accordion-bg: #e4dada;
+    --bs-accordion-border-color: #661414;
+    --bs-accordion-border-radius: 5px;
+}
+
+/* กำหนดสีของปุ่มหัวข้อ (Accordion Button) ในสถานะปกติ (พับอยู่) */
+
+#accordionExample .accordion-button {
+
+    background-color: #e4dada;
+
+    color: #410a0a;
+}
+
+/* กำหนดสีข้อความภายใน <p> ในปุ่มปกติ */
+#accordionExample .accordion-button p.topic {
+    color: #410a0a;
+    margin-bottom: 0;
+}
+
+
+/* **สถานะ ACTIVE (ปุ่มถูกกดเปิด) */
+
+#accordionExample .accordion-button:not(.collapsed) {
+
+    background-color: #FFFFFF;
+
+    color: #410a0a;
+
+    box-shadow: none;
+}
+
+
+#accordionExample .accordion-button:not(.collapsed) p.topic {
+    color: #410a0a;
+}
+
+
+
+/* กำหนดสีของปุ่มเมื่อ Focus (เน้นขอบเมื่อคลิก) */
+#accordionExample .accordion-button:focus {
+
+    box-shadow: 0 0 0 0.25rem rgba(65, 10, 10, 0.25);
+}
+
+/* กำหนดสีของเนื้อหา (Accordion Body) */
+#accordionExample .accordion-body {
+
+    background-color: #350000;
+
+    color: #000000;
+}
